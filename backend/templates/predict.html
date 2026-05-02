@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Churn Prediction Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="box">
+  <h2>📊 Churn Prediction</h2>
+  
+  <input type="number" id="age" placeholder="Enter Age">
+  <input type="number" id="balance" placeholder="Account Balance">
+  <input type="number" id="tenure" placeholder="Tenure (Years)">
+  
+  <button onclick="predict()">🚀 Predict</button>
+  
+  <h3 id="result"></h3>
+  
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

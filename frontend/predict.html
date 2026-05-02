@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="box">
+  <h2>Churn Prediction</h2>
+
+  <input type="number" id="age" placeholder="Age">
+  <input type="number" id="balance" placeholder="Balance">
+  <input type="number" id="tenure" placeholder="Tenure">
+
+  <button onclick="predict()">Predict</button>
+
+  <h3 id="result"></h3>
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
